@@ -1,7 +1,15 @@
 //source sans la documentation produite par javadoc.
 
 class Autobus {
+<<<<<<< HEAD
   public Autobus(int assis, int debout){
+=======
+  private int nbPlaceAssise;
+  private int nbPlaceDebout;
+
+  public Autobus(int nbPlaceAssise, int nbPlaceDebout) {
+
+>>>>>>> 26634ba255c6d4b6db3bccd4f98d60c7d9aa4936
   }
 
   public boolean aPlaceAssise() {
