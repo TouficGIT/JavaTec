@@ -95,11 +95,11 @@ class Autobus {
   }
 
   public void arretDemanderSortie(PassagerStandard p) {
-      if (p.estDebout(p)) {
+      if (p.estDebout()) {
           placesDebout.decrementer();
       }
 
-      else if (p.estAssis(p)) {
+      else if (p.estAssis()) {
           placesAssises.decrementer();
       }
 

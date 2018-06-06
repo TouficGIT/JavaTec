@@ -56,4 +56,5 @@ class PassagerStandard {
     //  bus.arretDemanderAssis(this);
     //}
   }
+  public java.lang.String toString()
 }
