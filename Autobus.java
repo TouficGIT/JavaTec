@@ -95,11 +95,11 @@ class Autobus {
   }
 
   public void arretDemanderSortie(PassagerStandard p) {
-      if (p.estDebout(p)) {
+      if (p.estDebout()) {
           placesDebout.decrementer();
       }
 
-      else if (p.estAssis(p)) {
+      else if (p.estAssis()) {
           placesAssises.decrementer();
       }
 
@@ -115,5 +115,12 @@ class Autobus {
       p.changerEnDehors();
       nb_passagers--;
 
+  }
+
+  @Override
+  public String toString() {
+    return "Arret en cours : " + arret +
+        "\n Jauge Assis : " + placesAssises+
+        "\n Jauge Debout : " + placesDebout;
   }
 }
