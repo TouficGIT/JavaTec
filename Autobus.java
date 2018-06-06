@@ -116,4 +116,11 @@ class Autobus {
       nb_passagers--;
 
   }
+
+  @Override
+  public String toString() {
+    return "Arret en cours : " + arret +
+        "\n Jauge Assis : " + placesAssises+
+        "\n Jauge Debout : " + placesDebout;
+  }
 }
