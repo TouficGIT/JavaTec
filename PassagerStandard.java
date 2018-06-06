@@ -56,5 +56,8 @@ class PassagerStandard {
     //  bus.arretDemanderAssis(this);
     //}
   }
-  public java.lang.String toString()
+  @Override
+  public java.lang.String toString(){
+    return "Passager : "+ nomPassager+ "| Destination : "+destinationPassager+" | Position : "+positionPassager;
+  }
 }
